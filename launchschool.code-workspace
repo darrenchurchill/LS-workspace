@@ -5,10 +5,6 @@
             "path": "../assessment-exam"
         },
         {
-            "name": "LS-template",
-            "path": "../LS-template",
-        },
-        {
             "name": "LS-intro-to-regex",
             "path": "../LS-intro-to-regex"
         },
@@ -51,6 +47,10 @@
         {
             "name": "JS100-book-exercises",
             "path": "../JS100-book-exercises"
+        },
+        {
+            "name": "LS-template",
+            "path": "../LS-template",
         },
         {
             "name": "LS-workspace",
