@@ -1,0 +1,116 @@
+{
+    "folders": [
+        {
+            "name": "assessment-exam",
+            "path": "../assessment-exam"
+        },
+        {
+            "name": "LS-template",
+            "path": "../LS-template",
+        },
+        {
+            "name": "LS-intro-to-regex",
+            "path": "../LS-intro-to-regex"
+        },
+        {
+            "name": "JS130-exercises",
+            "path": "../JS130-exercises"
+        },
+        {
+            "name": "JS130-TodoList",
+            "path": "../JS130-TodoList"
+        },
+        {
+            "name": "JS130",
+            "path": "../JS130"
+        },
+        {
+            "name": "JS120-exercises",
+            "path": "../JS120-exercises"
+        },
+        {
+            "name": "JS120",
+            "path": "../JS120"
+        },
+        {
+            "name": "JS101-JS119-exercises",
+            "path": "../JS101-JS119-exercises"
+        },
+        {
+            "name": "JS119",
+            "path": "../JS119"
+        },
+        {
+            "name": "JS110",
+            "path": "../JS110"
+        },
+        {
+            "name": "JS101",
+            "path": "../JS101"
+        },
+        {
+            "name": "JS100-book-exercises",
+            "path": "../JS100-book-exercises"
+        },
+        {
+            "name": "LS-workspace",
+            "path": ".",
+        },
+        {
+            "name": "launchschool-utilities",
+            "path": "../launchschool-utilities"
+        }
+    ],
+    "settings": {
+        "jest.disabledWorkspaceFolders": [
+            "assessment-exam",
+            "LS-workspace",
+            "LS-template",
+            "LS-intro-to-regex",
+            "JS130-exercises",
+            "JS120-exercises",
+            "JS120",
+            "JS119",
+            "JS101",
+            "JS100-book-exercises",
+            "launchschool-utilities"
+        ],
+        "cSpell.words": [
+            "idx"
+        ],
+    },
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "type": "node",
+                "name": "vscode-jest-tests.v2",
+                "request": "launch",
+                "args": [
+                    "--runInBand",
+                    "--watchAll=false",
+                    "--testNamePattern",
+                    "${jest.testNamePattern}",
+                    "--runTestsByPath",
+                    "${jest.testFile}"
+                ],
+                "cwd": "${workspaceFolder}",
+                "console": "integratedTerminal",
+                "internalConsoleOptions": "neverOpen",
+                "disableOptimisticBPs": true,
+                "program": "${workspaceFolder}/node_modules/.bin/jest",
+                "windows": {
+                    "program": "${workspaceFolder}/node_modules/jest/bin/jest"
+                },
+            },
+            {
+                "type": "node",
+                "request": "launch",
+                "name": "Node.js: ${fileBasename}",
+                "program": "${relativeFile}",
+                "cwd": "${fileWorkspaceFolder}",
+                "internalConsoleOptions": "openOnSessionStart",
+            }
+        ]
+    }
+}
